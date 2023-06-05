@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logotipo.png">
+    <title>Kristianm_page</title>
+    <style>
+        /* Estilos del encabezado */
+        header {
+            background-color: #13001c;
+            height: 60px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f6f9;
+        }
+
+        header img.logo {
+            max-width: 150px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        /* Estilos del contenedor principal */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #f8f6f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(46, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+
+        .container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2, h3 {
+            font-family: "Montserrat", sans-serif;
+            margin: 20px 0;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: #A600FF;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: #13001c;
+        }
+
+        body {
+            background-color: #f8f6f9;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        p {
+            color: #13001c;
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+            text-align: left;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: #13001c;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        footer .logo {
+            max-width: 150px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        footer a {
+            color: #f8f6f9;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            footer {
+                display: block;
+            }
+            
+            footer a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Estilos del botón */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            background-color: #f8f6f9;
+            color: #13001c;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #A600FF;
+            color: #f6f8f9;
+        }
+
+        .btn_2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #13001c;
+            color: #f8f6f9;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+        }
+
+        .btn_2:hover {
+            background-color: #A600FF;
+            color: #f6f8f9;
+        }
+
+        .large-button {
+            display: inline-block;
+            padding: 10px 10px;
+            background-color: #A600FF;
+            color: #f6f8f9;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            animation: pulse 3s infinite;
+        }
+
+        .large-button:hover {
+            background-color: #13001c;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1></h1>
+    </header>
+
+    <div class="container">
+        <img src="kristianm.png" alt="Imagen">
+        <div>
+            <h2>¿Quién es Kristianm?</h2>
+            <p>Hola, soy Kristian Martinez, un profesional en análisis de datos para startups. Ayudo a las startups a alcanzar sus objetivos a través de la toma de decisiones basada en datos.</p>
+
+            <a href="https://kristianm.super.site/" class="btn_2">Ver historia completa</a>
+
+            <h3>Portafolio</h3>
+            <p>En este portafolio, encontrarás una colección de proyectos que muestran mi experiencia en el uso del análisis de datos para resolver problemas comerciales y mejorar la toma de decisiones.</p>
+            <a href="https://kristianm.super.site/portafolio" class="btn_2">Ver Portafolio</a>
+
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style="width: 100%;">
+                <br>
+                <h2>#CrecerConDatos</h2>
+                <p>Videos relacionados con datos para startups o negocios. Aprende a crear las mejores estrategias y alcanzar los objetivos.</p>
+                <a href="https://www.youtube.com/@kristianm-datos/" class="btn_2">¡Ver videos!</a>
+            </div>
+        </div>
+
+        <br>
+        <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+            <iframe
+                src="https://www.youtube.com/embed/44lFi9Xueoo?start=5"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"></iframe>
+        </div>
+        <br>
+
+        <div style="clear: both;"></div>
+        <br><br><br>
+        <a href="https://kristianm.super.site/" class="large-button">Ir a página completa</a>
+        <br><br><br>
+
+    </div>
+
+    <footer>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEUoJBaHIh25AAAAYiHd6_gloseySuFlxyr-fs0pFGVZRnzDrRYVxo0Xw8rDmGrW8tPbkMuurHa0xTWlUGIRuJDggzRPWp2ExprlRbN7jNGWMMw-kaKty_FAXKM5yduy63z4WE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkristianmartinezcolina"
+            target="_blank">LinkedIn</a>
+        <a href="https://www.youtube.com/channel/UCCOAEUA4zegpYfWemeiOtKQ" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/kristianm.com_/" target="_blank">Instagram</a>
+        <a href="https://github.com/Kristianm0" target="_blank">GitHub</a>
+        <a href="https://kristianm.super.site/" class="btn" target="_blank">Visitar web completa</a>
+    </footer>
+</body>
+
+</html>
